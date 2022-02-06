@@ -1,0 +1,210 @@
+
+/* reset styles - removing padding and margins can save you cross-browser trouble later */
+h1, h2, h3, h4, blockquote, p, main, section, article, header, footer, img {
+	/* save time and reset all the margins and padding to zero */
+	/* you can add them back if you need them */
+	margin:0;
+	padding:0;
+	font:inherit; 
+}
+/* block element styling that will apply across layouts unless overridden later */
+body {
+	font-size:100%;
+	background-color:#1A2B1C;
+	margin:0;
+	padding:0 0 2em 0; /* sets bottom padding to 2em */ 
+}
+div.wrapper { 
+	width:95%; 
+	background:#FFF;
+	color:#000; 
+	margin:0 auto;
+	font-family:Gill Sans, Gill Sans MT, Myriad Pro, DejaVu Sans Condensed, Helvetica, Arial, "sans-serif";
+	font-size:1em;
+	line-height: 1.25em; 
+	/* max-width:960px; */
+	max-width:1085px; 
+}
+/******************************/
+/* style for screen < 700px   */
+/******************************/
+/* text styling               */
+/******************************/
+
+@media (min-width: 700px) {
+    div.wrapper {
+        font-size:1em;
+        line-height:1.375em; 
+    }
+    h1 {
+        font-size:2.5em; /*40px*/
+        line-height:1.125em; 
+        width:50%; 
+        padding:13px 20px;
+    }
+    h2 {
+        font-size:2em; /*32px*/
+        line-height:1.25em; 
+        padding:6px 20px 3px 20px;
+    }
+    h3 {
+        font-size:1.5em; /*24px*/
+        line-height:1.25em; 
+        padding:6px 20px 3px 20px;
+    }
+    h4 {
+        font-size:1.125em; /*18px*/
+        line-height:1.22222222em; 
+        padding:6px 20px 3px 20px;
+    }
+    blockquote {
+        font-size:1.5em; /*20px */
+        line-height:1.45833333em; 
+        padding:6px 20px;
+    }
+    p {
+        font-size:1em; 
+        line-height:1.375em;
+        padding:5px 20px; 
+    }
+ 
+/******* layout styling for screen less than 900px wide, greater than or equal to 700px *************/
+/***** This is where you come in. You need to adapt the layout styling for the next size up *********/
+    /* your layout CSS goes here */
+    article.tours {
+        width:35%;
+        float:left;
+    }   
+}
+ul {
+	margin-left:.75em; 
+}
+/******************************/
+/* style for screen < 700px   */
+/******************************/
+/* block elements             */
+/******************************/
+header {
+	background-color:#1A2B1C;
+	color:#FFF; 
+	background:url("../images/background-dew-on-grass.jpg") no-repeat;
+	background-size:100%; 
+	overflow: visible;
+	height:auto; 
+	width:100%; 
+}
+article.gallery {
+	width:100%; 
+}
+article.gallery img {
+	height:44%;
+	width:44%;
+	float:left;  
+	margin:4% 0 0 4%; 
+}
+article.gallery h2 {
+	padding-bottom:0; 
+}
+article.testimonials {
+	clear:both; 
+}
+footer {
+	text-align:center;
+	font-size:.75em; 
+	color: #8E8E8E;
+}
+
+/***************** text styling for screen less than 900px wide, greater than or equal to 700px *************************/
+
+@media (min-width: 700px) {
+	div.wrapper {
+		font-size:1em;
+		line-height:1.375em; 
+	}
+	h1 {
+		font-size:2.5em; /*40px*/
+		line-height:1.125em; 
+		width:50%; 
+		padding:13px 20px;
+	}
+	h2 {
+		font-size:2em; /*32px*/
+		line-height:1.25em; 
+		padding:6px 20px 3px 20px;
+	}
+	h3 {
+		font-size:1.5em; /*24px*/
+		line-height:1.25em; 
+		padding:6px 20px 3px 20px;
+	}
+	h4 {
+		font-size:1.125em; /*18px*/
+		line-height:1.22222222em; 
+		padding:6px 20px 3px 20px;
+	}
+	blockquote {
+		font-size:1.5em; /*20px */
+		line-height:1.45833333em; 
+		padding:6px 20px;
+	}
+	p {
+		font-size:1em; 
+		line-height:1.375em;
+		padding:5px 20px; 
+	}
+
+/******* layout styling for screen less than 900px wide, greater than or equal to 700px *************/
+/***** This is where you come in. You need to adapt the layout styling for the next size up *********/
+	/* your layout CSS goes here */
+}
+
+/******* text styling for screen width greater than or equal to 900px *******************************/
+
+@media (min-width: 900px) {
+	div.wrapper {
+		line-height:1.375em; 
+	}
+	h1 {
+		font-size:3em; /*48px*/
+		line-height:1.375em; 
+		width:50%; 
+		padding:13px 20px;
+	}
+	h2 {
+		font-size:2.25em; /*36px*/
+		line-height:1.375em; 
+		padding:6px 20px 3px 20px;
+	}
+	h3 {
+		font-size:1.75em; /*28px*/
+		line-height:1.375em; 
+		padding:6px 20px 3px 20px;
+	}
+	h4 {
+		font-size:1.5em; /*18px*/
+		line-height:1.22222222em; 
+		padding:6px 20px 3px 20px;
+	}
+	blockquote {
+		font-size:1.5em; /*20px */
+		line-height:1.45833333em; 
+		padding:6px 20px 3px 20px;
+	}
+	p {
+		font-size:1em; 
+		line-height:1.375em;
+		padding:5px 20px; 
+	}
+	
+/************* layout styling for screen width reater than or equal to 900px ************************/
+/***** This is where you come in. You need to adapt the layout styling for the next size up *********/
+	/* your layout CSS goes here */
+}
+audio.audioControl {
+    width:320px; 
+}
+<audio title="Common Loon" controls class="audioControl">
+    <source src="audio/Loons.ogg" type="audio/ogg">
+    <source src="audio/44loons.mp3" type="audio/mp3">
+    <p>This browser does not support HTML5 audio</p>
+</audio>
